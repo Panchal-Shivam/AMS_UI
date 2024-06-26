@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance Report</title>
+<style>
+/* General styles (unchanged) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #3498db;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+select[multiple] {
+  height: auto;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<h1>Generate Attendance Report</h1>
+<form action="#">
+  <label for="startDate">Start Date:</label>
+  <input type="text" id="startDate" name="startDate">
+
+  <label for="endDate">End Date:</label>
+  <input type="text" id="endDate" name="endDate">
+
+  <label for="attendanceStatus">Attendance Status:</label>
+  <select id="attendanceStatus" name="attendanceStatus" multiple>
+    <option value="Present">Present</option>
+    <option value="Absent">Absent</option>
+  </select>
+
+  <label for="division">Division:</label>
+  <select id="division" name="division" multiple>
+    <option value="Division A">Division A</option>
+    <option value="Division B">Division B</option>
+  </select>
+
+  <label for="subject">Subject:</label>
+  <select id="subject" name="subject" multiple>
+    <option value="Math">Math</option>
+    <option value="Physics">Physics</option>
+  </select>
+
+  <label for="rollNumber">Roll Number:</label>
+  <input type="text" id="rollNumber" name="rollNumber">
+
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="">All</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+  <label for="class">Class:</label>
+  <select id="class" name="class" multiple>
+    <option value="Class 1">Class 1</option>
+    <option value="Class 2">Class 2</option>
+  </select>
+
+  <label for="teacher">Teacher:</label>
+  <input type="text" id="teacher" name="teacher">
+
+  <label for="location">Location:</label>
+  <input type="text" id="location" name="location">
+
+  <label for="timing">Timing:</label>
+  <input type="text" id="timing" name="timing">
+
+  <label for="days">Days:</label>
+  <select id="days" name="days" multiple>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+  </select>
+
+  <div class="sort-by">
+    <!-- ... -->
+  </div>
+
+  <button type="submit">Generate Report</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty OTP Generation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .pattern-section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #otp-display {
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Faculty OTP Generation</h2>
+        <div class="pattern-section">
+            <label for="pattern-input">Enter Pattern:</label>
+            <input type="text" id="pattern-input" placeholder="Enter Pattern">
+        </div>
+        <button id="generate-btn" onclick="generateOTP()">Generate OTP</button>
+        <div id="otp-display" class="hidden">
+            <label for="otp-input">Enter OTP:</label>
+            <input type="text" id="otp-input" placeholder="Enter OTP">
+            <button onclick="markAttendanceWithOTP()">Mark Attendance</button>
+        </div>
+    </div>
+
+    <script defer src="path/to/qrcode.min.js"></script>
+    <script src="path/to/face-api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

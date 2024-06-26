@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Dashboard</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: sans-serif; /* Set a default font family */
+    }
+
+    h1, h2 {
+      margin: 0; /* Remove default margins for cleaner layout */
+    }
+
+    /* Header styles */
+    header {
+      display: flex; /* Arrange header elements horizontally */
+      justify-content: space-between; /* Distribute elements evenly */
+      align-items: center; /* Align vertically */
+      padding: 1rem;
+      background-color: #eee;
+    }
+
+    header h1 {
+      font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    header a {
+      text-decoration: none; /* Remove underline from link */
+      color: #000; /* Set link color */
+      padding: 0.5rem 1rem;
+      border: 1px solid #ddd; /* Add a border to the logout link */
+      border-radius: 4px; /* Round link corners for better UX */
+    }
+
+    header a:hover {
+      background-color: #ddd; /* Change background color on hover */
+    }
+
+    /* Dashboard section styles */
+    .dashboard-section {
+      cursor: pointer; /* Make entire section clickable */
+      padding: 20px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      background-color: #f5f5f5; /* Add a subtle background */
+      transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+      display: flex; /* Allow alignment of content within the section */
+      align-items: center; /* Center content vertically */
+    }
+
+    .dashboard-section:hover {
+      background-color: #e5e5e5; /* Change background color on hover */
+    }
+
+    .dashboard-section h2 {
+      font-size: 1.2rem;
+      margin-right: 10px; /* Add space between heading and link */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome, Professor Smith!</h1>
+    <a href="logout.html">Logout</a>
+  </header>
+
+  <section class="dashboard-section" id="reports" onclick="window.location.href='reportgeneration.html'">
+    <h2>Reports</h2>
+  </section>
+
+  <section class="dashboard-section" id="otpGeneration" onclick="window.location.href='otpgenerate.html'">  <h2>OTP Generation</h4>
+  </section>
+
+  <section class="dashboard-section" id="manualAttendance" onclick="window.location.href='manualbox.html'">
+    <h2>Manual Attendance</h2>
+  </section>
+
+  <section class="dashboard-section" id="personalDetails">
+    <h2>Personal Details</h2>
+  </section>
+</body>
+</html>

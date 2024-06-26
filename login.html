@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Portal - Login</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: sans-serif; /* Set a default font family */
+      display: flex; /* Allow vertical centering */
+      justify-content: center; /* Align content horizontally */
+      align-items: center; /* Align content vertically */
+      min-height: 100vh; /* Set minimum viewport height */
+      background-color: #f5f5f5; /* Add a subtle background color */
+    }
+
+    /* Form container styles */
+    .form-container {
+      background-color: #fff; /* Form background color */
+      padding: 30px;
+      border-radius: 4px; /* Rounded corners for a softer look */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      width: 350px; /* Set form width */
+    }
+
+    /* Form heading styles */
+    .form-heading {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    /* Input field styles */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block; /* Display labels on their own line */
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%; /* Make inputs full width within the form */
+      padding: 10px;
+      border: 1px solid #ccc; /* Light border for inputs */
+      border-radius: 4px; /* Rounded corners for consistency */
+      box-sizing: border-box; /* Include padding inside width */
+    }
+
+    /* Submit button styles */
+    .btn {
+      display: block; /* Make submit button full width */
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #333; /* Button color */
+      color: #fff; /* Button text color */
+      border: none; /* Remove button border */
+      border-radius: 4px; /* Rounded corners */
+      cursor: pointer; /* Indicate clickability */
+      transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+    }
+
+    .btn:hover {
+      background-color: #222; /* Change button background color on hover */
+    }
+
+    /* Link styles (for "Sign Up" in login form) */
+    .link {
+      text-align: center;
+      margin-top: 10px;
+      display: block;
+      color: #333; /* Link text color */
+      text-decoration: none; /* Remove underline */
+      transition: color 0.2s ease-in-out;
+    }
+
+    .link:hover {
+      color: #666; /* Change link color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="form-heading">Login</h2>
+    <form action="login_action.php" method="post">  <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <a href="signup.html" class="link">Sign Up</a> 
+  </div>
+</body>
+</html>
